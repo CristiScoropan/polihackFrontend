@@ -1,0 +1,10 @@
+.menus {
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+}

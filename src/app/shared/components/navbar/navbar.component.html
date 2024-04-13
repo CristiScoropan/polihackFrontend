@@ -1,0 +1,16 @@
+<p>
+  <mat-toolbar class="toolbar">
+    <div class="menus">
+      <span>Crack</span>
+      <span>Quizzes</span>
+      <span>Interviews</span>
+    </div>
+    <button mat-icon-button [matMenuTriggerFor]="menu" class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>settings</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="openMenu()">Log Out</button>
+    </mat-menu>
+  </mat-toolbar>
+</p>
+<router-outlet></router-outlet>

@@ -1,0 +1,20 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Quizes</h1>
+  <mat-grid-list cols="2" rowHeight="350px">
+    @for (card of cards; track card) {
+      <mat-grid-tile [colspan]="card.cols" [rowspan]="card.rows">
+        <mat-card class="dashboard-card">
+          <mat-card-header>
+            <mat-card-title>
+              {{card.name}}
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content class="dashboard-card-content">
+            <div class="content">{{card.description}}</div>
+            <button mat-button>Attempt quiz</button>
+          </mat-card-content> 
+        </mat-card>
+      </mat-grid-tile>
+    }
+  </mat-grid-list>
+</div>
